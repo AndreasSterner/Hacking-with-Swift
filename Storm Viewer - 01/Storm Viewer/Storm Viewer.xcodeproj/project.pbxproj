@@ -23,6 +23,8 @@
 		E191940A1ECAFEC5003CCE7C /* nssl0049.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E19194001ECAFEC5003CCE7C /* nssl0049.jpg */; };
 		E191940B1ECAFEC5003CCE7C /* nssl0051.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E19194011ECAFEC5003CCE7C /* nssl0051.jpg */; };
 		E191940C1ECAFEC5003CCE7C /* nssl0091.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E19194021ECAFEC5003CCE7C /* nssl0091.jpg */; };
+		E191940F1ECD8DB1003CCE7C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E191940D1ECD8DB1003CCE7C /* DetailViewController.swift */; };
+		E19194101ECD8DB1003CCE7C /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E191940E1ECD8DB1003CCE7C /* DetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		E19194001ECAFEC5003CCE7C /* nssl0049.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0049.jpg; sourceTree = "<group>"; };
 		E19194011ECAFEC5003CCE7C /* nssl0051.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0051.jpg; sourceTree = "<group>"; };
 		E19194021ECAFEC5003CCE7C /* nssl0091.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0091.jpg; sourceTree = "<group>"; };
+		E191940D1ECD8DB1003CCE7C /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		E191940E1ECD8DB1003CCE7C /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,8 @@
 				E19193E31ECAE91A003CCE7C /* AppDelegate.swift */,
 				E19193E51ECAE91A003CCE7C /* ViewController.swift */,
 				E19193E71ECAE91A003CCE7C /* Main.storyboard */,
+				E191940D1ECD8DB1003CCE7C /* DetailViewController.swift */,
+				E191940E1ECD8DB1003CCE7C /* DetailViewController.xib */,
 				E19193ED1ECAE91A003CCE7C /* Assets.xcassets */,
 				E19193EF1ECAE91A003CCE7C /* LaunchScreen.storyboard */,
 				E19193F21ECAE91A003CCE7C /* Info.plist */,
@@ -174,6 +180,7 @@
 				E19194091ECAFEC5003CCE7C /* nssl0046.jpg in Resources */,
 				E191940A1ECAFEC5003CCE7C /* nssl0049.jpg in Resources */,
 				E19194061ECAFEC5003CCE7C /* nssl0042.jpg in Resources */,
+				E19194101ECD8DB1003CCE7C /* DetailViewController.xib in Resources */,
 				E19193EE1ECAE91A003CCE7C /* Assets.xcassets in Resources */,
 				E191940C1ECAFEC5003CCE7C /* nssl0091.jpg in Resources */,
 				E19194051ECAFEC5003CCE7C /* nssl0041.jpg in Resources */,
@@ -191,6 +198,7 @@
 				E19193E61ECAE91A003CCE7C /* ViewController.swift in Sources */,
 				E19193EC1ECAE91A003CCE7C /* Storm_Viewer.xcdatamodeld in Sources */,
 				E19193E41ECAE91A003CCE7C /* AppDelegate.swift in Sources */,
+				E191940F1ECD8DB1003CCE7C /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +362,7 @@
 				E19193F71ECAE91A003CCE7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

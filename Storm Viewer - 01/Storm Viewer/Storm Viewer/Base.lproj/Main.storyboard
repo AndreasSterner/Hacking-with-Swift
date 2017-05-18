@@ -18,10 +18,10 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Picture" rowHeight="64" id="eed-Dv-e2O">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="PHw-2v-aeA">
                                 <rect key="frame" x="0.0" y="28" width="375" height="64"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eed-Dv-e2O" id="6sa-O7-iY7">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PHw-2v-aeA" id="UKE-su-KEe">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="63.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
@@ -32,6 +32,56 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Ugc-iy-nka">
+            <objects>
+                <tableViewController id="uK0-Al-GYb" customClass="ViewController" customModule="Storm_Viewer" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="eMz-kE-URp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="uK0-Al-GYb" id="6bI-pK-bG5"/>
+                            <outlet property="delegate" destination="uK0-Al-GYb" id="PjP-5a-8WZ"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tvd-O3-Nge" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="775" y="38"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="ZnF-lT-JqF">
+            <objects>
+                <viewController storyboardIdentifier="Detail" id="6zA-ra-qoX" customClass="DetailViewController" customModule="Storm_Viewer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FO5-eT-Xrq"/>
+                        <viewControllerLayoutGuide type="bottom" id="FCd-gp-bCW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SZu-W7-hvM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vXh-tF-vBD">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vXh-tF-vBD" firstAttribute="leading" secondItem="SZu-W7-hvM" secondAttribute="leading" id="3RA-a8-i67"/>
+                            <constraint firstAttribute="trailing" secondItem="vXh-tF-vBD" secondAttribute="trailing" id="KXl-jK-nSe"/>
+                            <constraint firstItem="vXh-tF-vBD" firstAttribute="top" secondItem="SZu-W7-hvM" secondAttribute="top" id="LST-6f-pLz"/>
+                            <constraint firstItem="FCd-gp-bCW" firstAttribute="top" secondItem="vXh-tF-vBD" secondAttribute="bottom" id="qfe-IO-Jmx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="vXh-tF-vBD" id="MRJ-mT-Jly"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fOP-Rg-EUk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1512.8" y="36.431784107946029"/>
         </scene>
     </scenes>
 </document>
